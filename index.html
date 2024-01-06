@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>C. Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/logo2.png" />
+    <script
+      src="https://kit.fontawesome.com/d5459fc38c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="img/logo2.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark fas" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>UI/UX Designer</p>
+          <h1>
+            Hi , I'm <span>Clarence</span><br />
+            Ebebe from South Africa
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="img/bachkgg.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Greetings! I am a passionate programmer with a specialization in
+              UI/UX design, app, and web development. With a keen eye for
+              aesthetics and a deep understanding of user experience, I thrive
+              on crafting digital solutions that seamlessly blend functionality
+              with visual appeal. My journey in the realm of programming began
+              with a fervor for creating intuitive and user-friendly interfaces
+              that enhance the overall digital experience. Over the years, I
+              have honed my skills in front-end development, mastering the art
+              of translating design concepts into responsive and engaging
+              applications. My expertise extends to both mobile app development
+              and web design, allowing me to create cohesive and immersive user
+              experiences across various platforms. I am dedicated to staying
+              abreast of the latest industry trends and technologies to ensure
+              that my work not only meets but exceeds the expectations of users.
+              As a programmer, I find immense satisfaction in the intricate
+              dance between code and design, constantly seeking ways to elevate
+              the digital landscape through innovation and creativity.
+            </p>
+
+            <div class="tab-title">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web/app Interfaces</li>
+
+                <li><span>Web Development</span><br />Web app Development</li>
+                <li>
+                  <span>App Development</span><br />Building IOS/Android apps
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2021 - Current</span><br />Freelance Mobile app
+                  developer.
+                </li>
+
+                <li><span>2019 - 2021</span><br />FullStack Developer.</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2016</span><br />Designing Web/app Interfaces</li>
+
+                <li><span>2016</span><br />Web app Development</li>
+                <li><span>2014</span><br />Building IOS/Android apps</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-------services-->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fas fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              I specialize in creating captivating web designs that seamlessly
+              blend aesthetics with functionality. From modern interfaces to
+              intuitive user experiences, my services elevate online presence,
+              ensuring a lasting impact for your brand. Let's transform your
+              vision into a pixel-perfect reality.
+            </p>
+            <a href="#">learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store-ios"></i>
+            <h2>App Design</h2>
+            <p>
+              In the realm of app design, I bring a passion for creating
+              visually appealing and user-centric experiences. Specializing in
+              crafting sleek interfaces and seamless interactions, my services
+              ensure that your app not only looks stunning but also delivers an
+              intuitive and engaging user journey. Let's collaborate to turn
+              your app ideas into a visually striking and functionally
+              exceptional reality.
+            </p>
+            <a href="#">learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              In the world of UI/UX design, I specialize in shaping digital
+              experiences that seamlessly blend aesthetics and functionality.
+              With a keen eye for user-centric design, my services focus on
+              creating interfaces that not only look visually appealing but also
+              prioritize a smooth and intuitive user journey. Elevate your
+              digital presence with designs that captivate and enhance user
+              satisfaction. Let's collaborate to transform your concepts into
+              compelling UI/UX realities.
+            </p>
+            <a href="#">learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- portfolio -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="img/work-1.png" alt="" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>
+                The app connects you to the tallented people around the
+                world.Download it from play store
+              </p>
+              <a href="#"><i class="fas fa-external-link-alt"></i> </a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="img/work-2.png" alt="" />
+            <div class="layer">
+              <h3>Music App</h3>
+              <p>
+                The app connects you to the tallented people around the
+                world.Download it from play store
+              </p>
+              <a href="#"><i class="fas fa-external-link-alt"></i> </a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="img/work-3.png" alt="" />
+            <div class="layer">
+              <h3>Online Shopping App</h3>
+              <p>
+                The app connects you to the tallented people around the
+                world.Download it from play store
+              </p>
+              <a href="#"><i class="fas fa-external-link-alt"></i> </a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn"> See more</a>
+      </div>
+    </div>
+    <!----Contact-->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i> ebebeclarence55@gmail.com
+            </p>
+            <p><i class="fa-solid fa-square-phone"></i> +27 0633589251</p>
+            <div class="social-icons">
+              <a href="https://facebook.com/"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="img/CV.pdf" download class="btn btn2">Download CV</a>
+          </div>
+
+          <div class="contact-right">
+            <form
+              name="submit-to-google-sheet"
+              action="https://formsubmit.co/ebebeclarence55@gmail.com"
+              method="POST"
+            >
+              <input
+                type="text"
+                name="Name"
+                class="name form-control"
+                placeholder="Your Name"
+                required
+              />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                class="email form-control"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                class="message form-control"
+                placeholder="Your Message"
+                required
+              ></textarea>
+              <button type="submit" name="submit" class="submit btn btn2 bt">
+                Submit
+              </button>
+            </form>
+            <span id="msg"> </span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright ©️ Clarence. <i class="fas fa-heart"></i></p>
+      </div>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      let tablinks = document.getElementsByClassName("tab-links");
+      const tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabc of tabcontents) {
+          tabc.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      let sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbyPiS9GCezU_b013eMsRx0a-PHRhEPdrhuQcQc68ao3n-zl_POlGGmfwE-yEgRY-Hg8Ng/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+    </script>
+    <script src="index.js"></script>
+  </body>
+</html>
